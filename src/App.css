@@ -1,38 +1,231 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Display:wght@500&display=swap');
+
+@font-face {
+  font-family: 'Mosk';
+  src: local('Mosk Ultra-Bold'), url(./fonts/Mosk-Ultra-Bold900.ttf) format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto, sans-serif ;
+}
+
+/* Header component */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  
+}
+
+header img {
+  width: auto;
+  height: 127px;
+  margin: 43px auto 0;
+}
+
+
+/* Button component */
+
+.button-container {
+  display: inline-block;
+  position: relative;
+  width: 230px;
+  height: 52px;
+  border: 1px solid #000000;
+}
+
+.button {
+  width: 230px;
+  height: 52px;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid black;
+  transform: translate(-10px, -12px);
+  transition: all 0.2s ease;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button:hover {
+  background-color: black;
+  color: white;
+  transform: translate(-1px, -1px);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+/* main  */
+
+main {
+  padding: 0 274px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.welcome {
+  height: 85vh ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.p-25p {
+  font-size: 25px;
+  color: black;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.big-shrift {
+  font-family: 'Mosk-Ultra-Bold900';
+  font-size: 132px;
+  color: black;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: visible;
+  font-family: Mosk, serif;
 }
+
+
+.stiky-line {
+  width: 1px;
+  height: 70px;
+  background-color: black;
+  position: sticky;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+}
+
+.youngAndBold {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.left-side .p-32 {
+  font-size: 32px;
+  text-transform: uppercase;
+
+}
+.right-side {
+  width: 50%;
+  z-index: -2;
+}
+.right-side img {
+  width: 100%;
+  height: 100vh;
+}
+
+
+.works-gallery {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text-description {
+  width: 50%;
+}
+
+
+.pics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.pics {
+  margin-top: 50px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pics a {
+  width: 24.99%;
+  margin-bottom: 10px;
+}
+
+.pics img {
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+}
+
+
+
+.whatWeDo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 300px 0;
+}
+
+.lists {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.lists ul {
+  list-style: none;
+  margin-right: 150px;
+  font-size: 18px;
+
+}
+
+.lists ul li {
+  margin-bottom: 18px;
+}
+
+
+.cube-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+}
+
+
+footer {
+  padding: 0 274px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
+
+
+
+
